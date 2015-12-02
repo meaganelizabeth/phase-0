@@ -1,0 +1,85 @@
+*{
+	color: #000080;
+	background-color: #ffffff;
+}
+
+a{
+	color: #800080;
+}
+
+a:visited {
+	color: #ff0000;
+}
+
+.head {
+	font-weight: bold;
+	font-size: 1em;
+	text-align: center;
+}
+
+#big {
+	font-size: 1.5em;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background-color: grey;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.update {
+	font-size: .75em;
+}
+
+img {
+	margin: auto;
+}
+
+.geico {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 
+
+What is important to know when linking an external file (like a stylesheet) to
+an HTML file?
+
+It's important to know the correct link syntax, where to place the link (in
+the head of the HTML file), and the relative path between the HTML and CSS
+file.
+
+
+What tricks did you use to help you with positioning? How hard was it to get
+the site as you wanted it?
+
+I used some CSS (like text-align and margin) to help with positioning. It was
+difficult to get the site exactly as I wanted but not impossible. I definately
+felt like that gif of Peter Griffin adjusting the blinds that I saw on canvas
+earlier this week.
+
+What CSS did you use to modify the element style?
+
+I used CSS elements such as font-weight, font-size, and color on different
+divs and spans and also applied styling to links using the a: selector.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose
+and why? If you didn't, how would you know which one to add to your HTML?
+
+I modified a LOT of my HTML to include both classes and ids. I primarily chose
+classes since there was a lot of styling being applied to multiple elements
+but at one point I used an id for a <span> to alter the size of the first
+letters in Berkshire Hathaway.
+
+When you compared your site to the actual code base, which do you think had
+cleaner code that followed best practices and why?
+
+If I'm going but what I've been told so far, my website technically had
+cleaner code since I did not style within my html. Berkshire Hathaway's site
+is very simple, however, and there were points when flipping between to files
+seemed tedious. I suppose it's up for debate.
+
+*/
