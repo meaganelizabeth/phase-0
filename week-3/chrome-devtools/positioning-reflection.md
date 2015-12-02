@@ -6,7 +6,7 @@
 ![Challenge 6](imgs/challenge-6.png)
 ![Challenge 7](imgs/challenge-7.png)
 ![Challenge 8](imgs/challenge-8.png)
-![Challenge 9](imgs/challenge9.png)
+![Challenge 9](imgs/challenge-9.png)
 
 
 How can you use Chrome's DevTools inspector to help you format or position
