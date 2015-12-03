@@ -47,3 +47,5 @@ puts 'A bigger better number would be ' + num2.to_s
 #
 #LINKS TO EXERCISES:
 #
+# 4.3.1: https://github.com/meaganelizabeth/phase-0/blob/master/week-4/address/my_solution.rb
+# 4.3.2: https://github.com/meaganelizabeth/phase-0/blob/master/week-4/math/my_solution.rb
