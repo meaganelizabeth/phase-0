@@ -44,6 +44,6 @@ Local variables are objects that store other objects such as strings, integers a
 This challenge was a little bit baffling to me bacause I wasn't entirely sure what I was doing yet had no problem getting my programs to pass the rspec tests. Hopefully whatever it is that I'm doing right will become clearer to me in the coming weeks.
 
 ####Links to challenge solution files:
-[Defining Variables](#)
-[Simple String Methods](#)
-[Local Variables and Basic Arithmetic Operations](#)
+[Defining Variables](https://github.com/meaganelizabeth/phase-0/blob/master/week-4/defining-variables.rb)
+[Simple String Methods](https://github.com/meaganelizabeth/phase-0/blob/master/week-4/simple-string.rb)
+[Local Variables and Basic Arithmetic Operations](https://github.com/meaganelizabeth/phase-0/blob/master/week-4/basic-math.rb)
