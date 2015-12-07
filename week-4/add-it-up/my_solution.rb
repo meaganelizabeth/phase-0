@@ -32,9 +32,9 @@ end
 
 # 3. total refactored solution
 
-#def total (array)
-#	array.inject { |sum, n| sum + n }
-#end
+def total (array)
+	array.inject { |sum, n| sum + n }
+end
 
 
 
@@ -52,19 +52,19 @@ end
 
 
 # 5. sentence_maker initial solution
-#def sentence_maker (array)
-#	index = 0
-#	while index < array.length
-#		if index == 0
-#			sentence = array[index].to_s.capitalize
-#		else 
-#			sentence = sentence + " " + array[index].to_s
-#		end
-#		index += 1
-#	end
-#	sentence = sentence + "."
-#	return sentence 
-#end
+def sentence_maker (array)
+	index = 0
+	while index < array.length
+		if index == 0
+			sentence = array[index].to_s.capitalize
+		else 
+			sentence = sentence + " " + array[index].to_s
+		end
+		index += 1
+	end
+	sentence = sentence + "."
+	return sentence 
+end
 
 
 # 6. sentence_maker refactored solution
