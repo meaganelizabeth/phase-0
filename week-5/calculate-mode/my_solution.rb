@@ -1,6 +1,6 @@
 # Calculate the mode Pairing Challenge
 
-# I worked on this challenge [with: Meagan Munch]
+# I worked on this challenge with Lucas Nagle.
 
 # I spent [] hours on this challenge.
 
