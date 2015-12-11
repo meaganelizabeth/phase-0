@@ -51,11 +51,6 @@ end
 
 
 
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
-
 
 # Person 3
 def my_array_sorting_method(source)
