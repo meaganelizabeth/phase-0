@@ -41,3 +41,5 @@ end
 people = ["Alvin", "Betsy", "Cecelia", "Dan", "Esther", "Fred", "Ginny", "Hans", "Ida", "John", "Kristin", "Lemmy", "Nana"]
 group(people)
 
+# Reflection
+
