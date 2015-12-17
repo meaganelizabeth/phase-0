@@ -6,30 +6,36 @@
 
 # 0. Pseudocode
 
-# Input:
-# Output: Die class that has an argument and two methods
-# Initialize a die class that takes a number of sides as an argument
-# write a method that outputs number of sides for Die object
-# write a method that outputs a random number between 1 and the number of sides
-# in the second method, raise an exception if Die is passed a number for sides that is less than one.
+# Input: 
+# die = Die.new(6) creates an object with 6 sides
+
+# Output:
+# die.sides returns 6
+# die.roll returns random number between 1 and 6 
+
+# Steps:
+# Create a new class Die
+# set number of sides equal to number given at initialization
+# have sides for class Die return sides
+# have roll for class Die return a number between 1 and sides
 
 # 1. Initial Solution
 
 class Die
   def initialize(sides)
+    if sides < 1
+      raise ArgumentError, "Die must have at least 1 side"
+    else
     @sides = sides
-    sides()
+  end
   end
 
   def sides
-    unless @sides > 0
-      raise ArgumentError.new("Die must have a minimum of one side.")
-    end
-    return @sides
+    @sides
   end
 
   def roll
-    return rand(1..@sides)
+    (rand (sides)) + 1
   end
 end
 
