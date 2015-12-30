@@ -56,5 +56,13 @@ function min(x, y) {
 
 
 
+
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
+
+var me = {
+	myName: "Meagan", 
+	age: 27, 
+	favoriteFoods: ["pizza", "sushi", "cheese"], 
+	quirk: "left-handed"
+};
