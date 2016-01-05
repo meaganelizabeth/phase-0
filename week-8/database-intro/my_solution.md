@@ -39,7 +39,7 @@ A one-to-many relationship is a relationship between two sets of data in which t
 
 A primary key is the main identifier for a row in a table. A foreign key is a column that contains the primary key of another table in the database. No values in the primary key column can be NULL and each primary key value is unique for a table, while foreign key values can be NULL and do not have to be unique.
 
-How can you select information out of a SQL database? What are some general guidelines for that?
+####How can you select information out of a SQL database? What are some general guidelines for that?
 
 You can select data out of a SQL database by using the syntax "SELECT * FROM table" to reference all columns in a table and "SELECT column_a, column_b FROM table" to select individual or multiple columns. Rows can be selected for using the WHILE operator and information can be ordered using the ORDER BY operator. After all clause calls are made the statement that calls for data must end in a semicolin.
 
