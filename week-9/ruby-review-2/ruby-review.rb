@@ -36,83 +36,149 @@
 # removes student from cohort students array
 #     removes email from email list
 
-require 'date'
 
 # Initial Solution
 
+# require 'date'
+
+# class GlobalCohort
+#   attr_reader :name, :start_date, :immersive_date, :graduation_date
+#   def initialize(name, start_date)
+#     @name = name
+#     @start_date = Date.parse(start_date)
+#     @immersive_date = @start_date + 63
+#     @graduation_date = @start_date + 126
+#   end
+
+#   def currently_in_phase()
+#     date = Date.today
+#     if date < @start_date
+#       puts "This group has not started phase 0 yet"
+#     elsif date >= @start_date && date < @immersive_date
+#       return 0
+#     elsif date >= @immersive_date && date < (@immersive_date + 21)
+#       return 1
+#     elsif date >= (@immersive_date + 21) && date < (@immersive_date + 42)
+#       return 2
+#     elsif date >= (@immersive_date + 42) && date < @graduation
+#       return 3
+#     else
+#       puts "This group has graduated!"
+#     end
+#   end
+
+#   def graduated?()
+#     date = Date.today
+#     return date > @graduation
+#   end
+
+# end
+
+# class LocalCohort < GlobalCohort
+#   attr_reader :city
+#   attr_accessor :email_list
+#   attr_accessor :students
+#   def initialize(city)
+#     @city = city
+#     @email_list = {}
+#     @students = []
+#   end
+
+#   def add_student(student, email)
+#     @students.push(student)
+#     @email_list[student] = email
+#   end
+
+#   def remove_student(student)
+#     @students.delete(student)
+#     @email_list.delete(student)
+#   end
+
+#   def num_of_students
+#     @students.length
+#   end
+
+# end
+
+
+# Refactored Solution
+
+require 'date'
+
 class GlobalCohort
-  attr_reader :name, :start_date
-  def initialize(name, start_date) 
+  attr_reader :name, :start_date, :immersive_date, :phase_2, :phase_3, :graduation_date, :today
+  def initialize(name, start_date)
     @name = name
-    @start_date = Date.new(start_date)
-    @immersive_date = start_date + 63
-    @graduation = start_date + 126
+    @start_date = Date.parse(start_date)
+    @immersive_date = @start_date + 70
+    @phase_2 = @start_date + 91
+    @phase_3 = @start_date + 112
+    @graduation_date = @start_date + 140
+    @today = Date.today
   end
-  
+
   def currently_in_phase()
+    if @today < @start_date
+      puts "This group has not started phase 0 yet"
+    elsif @today  < @immersive_date
+      return 0
+    elsif @today < @phase_2
+      return 1
+    elsif @today < @phase_3
+      return 2
+    elsif @today < @graduation_date
+      return 3
+    else
+      puts "This group has graduated!"
+    end
   end
-  
+
   def graduated?()
-    date = Date.today
-    return date > @graduation
+    return @today > @graduation_date
   end
 
 end
 
 class LocalCohort < GlobalCohort
-  attr_reader :city 
-  attr_accessor :email_list
-  attr_accessor :students
+  attr_reader :city
+  attr_accessor :email_list, :students
   def initialize(city)
     @city = city
     @email_list = {}
     @students = []
   end
-  
+
   def add_student(student, email)
     @students.push(student)
     @email_list[student] = email
   end
-  
+
   def remove_student(student)
     @students.delete(student)
     @email_list.delete(student)
   end
-  
+
   def num_of_students
     @students.length
   end
-  
+
 end
 
-squirells = GlobalCohort.new("Squirells", '2016, 11, 7')
-chi = LocalCohort.new("Chicago")
-puts squirells.start_date
-
-
-chi.add_student("Meagan", "meagan@mail.com")
-chi.add_student("Dave", "dave@mail.com")
-chi.add_student("Joe", "joe@mail.com")
-puts chi.students
-puts chi.email_list
-
-chi.remove_student("Joe")
-puts chi.students
-puts chi.email_list
-puts chi.num_of_students
-
-date = Date.today
-date2 = date + 100
-puts date
-puts date2
-puts date < date2
-
-# puts squirells.immersive_date
-
-
-
-
-# Refactored Solution
+# sq = GlobalCohort.new("Squirrels", '10-11-2015')
+# chi = LocalCohort.new("Chicago")
+# puts sq.start_date
+# puts sq.immersive_date
+# puts sq.graduation_date
+# puts sq.currently_in_phase
+# puts sq.graduated?
+# chi.add_student("Joe", "joe@mail.com")
+# chi.add_student("Meagan", "meagan@mail.com")
+# chi.add_student("Dave", "dave@mail.com")
+# puts chi.students
+# puts chi.email_list
+# chi.remove_student("Joe")
+# puts chi.students
+# puts chi.email_list
 
 
 
