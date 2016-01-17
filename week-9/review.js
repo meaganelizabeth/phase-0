@@ -130,7 +130,7 @@ printList(myList)
 
 
 
-// Reflaction
+// Reflection
 
 // What concepts did you solidify in working on this challenge? (reviewing the
 // passing of information, objects, constructors, etc.)
