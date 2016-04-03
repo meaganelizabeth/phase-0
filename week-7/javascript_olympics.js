@@ -7,7 +7,7 @@
 
 // Warm Up
 
-var leBronJames = {
+var leBronJames =  {
 	name: "LeBron James",
 	event: "Basketball"
 }
